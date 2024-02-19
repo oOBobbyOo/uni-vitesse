@@ -73,7 +73,10 @@
     "husky": "^8.0.0",
     "lint-staged": "^15.2.2",
     "typescript": "^5.3.3",
+    "unocss": "^0.58.5",
     "vite": "4.0.3",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-svg-loader": "^5.1.0",
     "vue-tsc": "^1.0.24"
   },
   "lint-staged": {
