@@ -68,6 +68,7 @@
     "@types/wechat-miniprogram": "^3.4.7",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.7",
+    "@uni-helper/vite-plugin-uni-manifest": "^0.2.3",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.14",
     "@uni-helper/vite-plugin-uni-platform": "^0.0.4",
     "@vue/runtime-core": "^3.2.45",
