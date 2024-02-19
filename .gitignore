@@ -25,3 +25,7 @@ auto-import.d.ts
 
 # rollup-plugin-visualizer
 .visualizer
+
+# project
+project.config.json
+project.private.config.json
