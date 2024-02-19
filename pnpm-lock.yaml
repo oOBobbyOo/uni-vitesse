@@ -109,6 +109,9 @@ devDependencies:
   unocss:
     specifier: ^0.58.5
     version: 0.58.5(postcss@8.4.35)(vite@4.0.3)
+  unplugin-auto-import:
+    specifier: ^0.17.5
+    version: 0.17.5
   vite:
     specifier: 4.0.3
     version: 4.0.3(@types/node@20.11.19)(terser@5.27.1)
@@ -8822,6 +8825,30 @@ packages:
       unplugin: 1.7.1
     transitivePeerDependencies:
       - rollup
+
+  /unplugin-auto-import@0.17.5:
+    resolution: {integrity: sha512-fHNDkDSxv3PGagX1wmKBYBkgaM4AKAgZmdJw/bxjhNljx9KSXSgHpGfX0MwUrq9qw6q1bhHIZVWyOwoY2koo4w==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@nuxt/kit': ^3.2.2
+      '@vueuse/core': '*'
+    peerDependenciesMeta:
+      '@nuxt/kit':
+        optional: true
+      '@vueuse/core':
+        optional: true
+    dependencies:
+      '@antfu/utils': 0.7.7
+      '@rollup/pluginutils': 5.1.0
+      fast-glob: 3.3.2
+      local-pkg: 0.5.0
+      magic-string: 0.30.7
+      minimatch: 9.0.3
+      unimport: 3.7.1
+      unplugin: 1.7.1
+    transitivePeerDependencies:
+      - rollup
+    dev: true
 
   /unplugin@1.7.1:
     resolution: {integrity: sha512-JqzORDAPxxs8ErLV4x+LL7bk5pk3YlcWqpSNsIkAZj972KzFZLClc/ekppahKkOczGkwIG6ElFgdOgOlK4tXZw==}

@@ -1,6 +1,8 @@
 import { resolve } from 'node:path'
 import { defineConfig, loadEnv } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
+// @see https://github.com/antfu/unplugin-auto-import
+import AutoImport from 'unplugin-auto-import/vite'
 // @see https://unocss.dev/integrations/vite
 import UnoCSS from 'unocss/vite'
 // @see https://github.com/jpkleemans/vite-svg-loader
@@ -29,6 +31,15 @@ export default defineConfig(({ command, mode }) => {
       Uni(),
       UnoCSS(),
       svgLoader(),
+      // 按需自动导入
+      AutoImport({
+        imports: ['vue', 'uni-app'],
+        dts: 'src/auto-imports.d.ts',
+        dirs: ['src/composables', 'src/hooks', 'src/stores'],
+        vueTemplate: true,
+        resolvers: [],
+      }),
+
       createSvgIconsPlugin({
         // 指定需要缓存的图标文件夹
         iconDirs: [resolve(process.cwd(), 'src/assets/svg')],

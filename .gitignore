@@ -19,3 +19,9 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+# unplugin-auto-import
+auto-import.d.ts
+
+# rollup-plugin-visualizer
+.visualizer
