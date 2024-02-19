@@ -3,6 +3,8 @@ import { defineConfig, loadEnv } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
 // @see https://github.com/uni-helper/vite-plugin-uni-pages
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+// @see https://uni-helper.js.org/vite-plugin-uni-layouts
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 // @see https://github.com/antfu/unplugin-auto-import
 import AutoImport from 'unplugin-auto-import/vite'
 // @see https://unocss.dev/integrations/vite
@@ -36,6 +38,7 @@ export default defineConfig(({ command, mode }) => {
         homePage: 'pages/index/index',
         // subPackages: ['src/pages-sub'], // 是个数组，可以配置多个
       }),
+      UniLayouts(),
       // UniXXX 需要在 Uni 之前引入
       Uni(),
       UnoCSS(),
