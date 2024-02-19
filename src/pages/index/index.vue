@@ -1,3 +1,11 @@
+<route lang="json5" type="home">
+{
+  style: {
+    navigationBarTitleText: '首页',
+  },
+}
+</route>
+
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />

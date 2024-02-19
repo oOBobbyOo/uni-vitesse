@@ -1,5 +1,13 @@
+<route lang="json5">
+{
+  style: {
+    navigationBarTitleText: '关于',
+  },
+}
+</route>
+
 <template>
-  <view>
+  <view class="flex-center">
     <text>about</text>
   </view>
 </template>

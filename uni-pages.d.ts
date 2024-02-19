@@ -9,7 +9,9 @@ export interface NavigateToOptions {
 }
 interface RedirectToOptions extends NavigateToOptions {}
 
-export interface SwitchTabOptions {}
+export interface SwitchTabOptions {
+  url: '/pages/index/index' | '/pages/about/index'
+}
 
 type ReLaunchOptions = NavigateToOptions | SwitchTabOptions
 

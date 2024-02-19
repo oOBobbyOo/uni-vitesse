@@ -2,21 +2,49 @@
   "pages": [
     {
       "path": "pages/index/index",
-      "type": "home"
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
     },
     {
       "path": "pages/about/index",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "关于"
+      }
     }
   ],
   "globalStyle": {
+    "navigationStyle": "default",
+    "navigationBarTitleText": "uni-vitese",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "@uni-helper"
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#FFF"
   },
-  "subPackages": [
-    {
-      "root": "pages-sub",
-      "pages": []
-    }
-  ]
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#3b82f6",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/homeHL.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/tabbar/about.png",
+        "selectedIconPath": "static/tabbar/aboutHL.png",
+        "pagePath": "pages/about/index",
+        "text": "关于"
+      }
+    ]
+  },
+  "subPackages": []
 }
