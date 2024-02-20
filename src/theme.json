@@ -1,0 +1,34 @@
+{
+  "light": {
+    "navBgColor": "#f8f8f8",
+    "navTxtStyle": "black",
+    "bgColor": "#ffffff",
+    "bgTxtStyle": "light",
+    "bgColorTop": "#eeeeee",
+    "bgColorBottom": "#efefef",
+    "tabFontColor": "#bfbfbf",
+    "tabSelectedColor": "#3cc51f",
+    "tabBgColor": "#ffffff",
+    "tabBorderStyle": "black",
+    "iconPath1": "/static/tabbar/home.png",
+    "selectedIconPath1": "/static/tabbar/homeHL.png",
+    "iconPath2": "/static/tabbar/about.png",
+    "selectedIconPath2": "/static/tabbar/aboutHL.png"
+  },
+  "dark": {
+    "navBgColor": "#292929",
+    "navTxtStyle": "white",
+    "bgColor": "#1f1f1f",
+    "bgTxtStyle": "dark",
+    "bgColorTop": "#292929",
+    "bgColorBottom": "#1f1f1f",
+    "tabFontColor": "#ffffff",
+    "tabSelectedColor": "#51a937",
+    "tabBgColor": "#292929",
+    "tabBorderStyle": "white",
+    "iconPath1": "/static/tabbar/home.png",
+    "selectedIconPath1": "/static/tabbar/homeHL.png",
+    "iconPath2": "/static/tabbar/about.png",
+    "selectedIconPath2": "/static/tabbar/aboutHL.png"
+  }
+}

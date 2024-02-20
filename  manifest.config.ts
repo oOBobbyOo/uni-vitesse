@@ -9,6 +9,16 @@ export default defineManifestConfig({
   transformPx: false,
   /* 5+App特有相关 */
   'app-plus': {
+    darkmode: true,
+    themeLocation: 'theme.json',
+    //iOS平台的安全区域
+    safearea: {
+      background: '#ffffff',
+      backgroundDark: '#2f0508', // HX 3.1.19+支持
+      bottom: {
+        offset: 'auto',
+      },
+    },
     usingComponents: true,
     nvueStyleCompiler: 'uni-app',
     compilerVersion: 3,
@@ -53,10 +63,16 @@ export default defineManifestConfig({
       },
     },
   },
+  h5: {
+    darkmode: true,
+    themeLocation: 'theme.json',
+  },
   /* 快应用特有相关 */
   quickapp: {},
   /* 小程序特有相关 */
   'mp-weixin': {
+    darkmode: true,
+    themeLocation: 'theme.json',
     appid: '',
     setting: {
       urlCheck: false,
