@@ -48,8 +48,8 @@ export default defineConfig(({ command, mode }) => {
       UniManifest(),
       // UniXXX 需要在 Uni 之前引入
       Uni(),
+      // unocss
       UnoCSS(),
-      svgLoader(),
       // 按需自动导入
       AutoImport({
         imports: ['vue', 'uni-app'],
@@ -58,7 +58,8 @@ export default defineConfig(({ command, mode }) => {
         vueTemplate: true,
         resolvers: [],
       }),
-
+      // SVG
+      svgLoader(),
       createSvgIconsPlugin({
         // 指定需要缓存的图标文件夹
         iconDirs: [resolve(process.cwd(), 'src/assets/svg')],

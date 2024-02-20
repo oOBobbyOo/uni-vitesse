@@ -13,12 +13,12 @@ export default defineUniPages({
   },
   tabBar: {
     color: '#bfbfbf',
-    selectedColor: '#3b82f6',
+    selectedColor: '#3cc51f',
     backgroundColor: '#F8F8F8',
     borderStyle: 'black',
     height: '50px',
     fontSize: '10px',
-    iconWidth: '24px',
+    iconWidth: '22px',
     spacing: '3px',
     list: [
       {
@@ -34,5 +34,12 @@ export default defineUniPages({
         text: '关于',
       },
     ],
+  },
+  // @see https://zh.uniapp.dcloud.io/collocation/pages#easycom
+  easycom: {
+    autoscan: true,
+    custom: {
+      '^uni-(.*)': '@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue',
+    },
   },
 })
