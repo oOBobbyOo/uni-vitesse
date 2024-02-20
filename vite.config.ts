@@ -52,7 +52,7 @@ export default defineConfig(({ command, mode }) => {
       UnoCSS(),
       // 按需自动导入
       AutoImport({
-        imports: ['vue', 'uni-app'],
+        imports: ['vue', 'uni-app', '@vueuse/core'],
         dts: 'src/auto-imports.d.ts',
         dirs: ['src/composables', 'src/hooks', 'src/stores'],
         vueTemplate: true,

@@ -1,8 +1,10 @@
 <route lang="json5" type="home">
 {
   style: {
+    navigationStyle: 'custom',
     navigationBarTitleText: '首页',
   },
+  layout: 'default',
 }
 </route>
 
@@ -13,11 +15,9 @@ function go() {}
 </script>
 
 <template>
-  <view p="x4 y10" text="center">
-    <TheLogo />
-    <TheInput v-model:value="name" placeholder="What's your name?" @keydown.enter="go" />
-    <View>
-      <button :disabled="!name" m-3 text-sm btn @click="go">Go</button>
-    </View>
+  <TheLogo />
+  <TheInput v-model:value="name" placeholder="What's your name?" @keydown.enter="go" />
+  <view>
+    <button :disabled="!name" m-3 text-sm btn @click="go">Go</button>
   </view>
 </template>
