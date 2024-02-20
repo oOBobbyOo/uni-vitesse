@@ -19,7 +19,12 @@
     },
     {
       "path": "pages/hi/index",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "Hi"
+      },
+      "layout": "default"
     }
   ],
   "globalStyle": {

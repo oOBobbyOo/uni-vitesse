@@ -11,7 +11,11 @@
 <script setup lang="ts">
 const name = ref('')
 
-function go() {}
+function go() {
+  uni.navigateTo({
+    url: `/pages/hi/index?name=${name.value}`,
+  })
+}
 </script>
 
 <template>
