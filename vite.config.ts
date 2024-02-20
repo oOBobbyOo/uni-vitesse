@@ -54,7 +54,7 @@ export default defineConfig(({ command, mode }) => {
       AutoImport({
         imports: ['vue', 'uni-app', '@vueuse/core'],
         dts: 'src/auto-imports.d.ts',
-        dirs: ['src/composables', 'src/hooks', 'src/stores'],
+        dirs: ['src/composables', 'src/hooks'],
         vueTemplate: true,
         resolvers: [],
       }),

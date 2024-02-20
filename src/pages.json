@@ -16,6 +16,10 @@
         "navigationBarTitleText": "关于"
       },
       "layout": "default"
+    },
+    {
+      "path": "pages/hi/index",
+      "type": "page"
     }
   ],
   "globalStyle": {
