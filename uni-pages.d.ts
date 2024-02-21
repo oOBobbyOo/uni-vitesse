@@ -5,6 +5,7 @@
 
 export interface NavigateToOptions {
   url: "/pages/index/index" |
+       "/pages/webview" |
        "/pages/about/index" |
        "/pages/hi/index";
 }

@@ -10,6 +10,10 @@
       "layout": "default"
     },
     {
+      "path": "pages/webview",
+      "type": "page"
+    },
+    {
       "path": "pages/about/index",
       "type": "page",
       "style": {

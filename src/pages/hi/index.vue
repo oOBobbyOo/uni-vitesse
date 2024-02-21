@@ -16,10 +16,6 @@ const name = ref('')
 onLoad((option) => {
   name.value = option?.name
 })
-
-function back() {
-  uni.navigateBack()
-}
 </script>
 
 <template>
@@ -35,7 +31,7 @@ function back() {
     <TheCounter />
 
     <view>
-      <button m-3 text-sm btn @click="back">Back</button>
+      <button m-3 text-sm btn @click="router.back">Back</button>
     </view>
   </view>
 </template>

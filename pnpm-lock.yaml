@@ -65,6 +65,9 @@ dependencies:
   pinia-plugin-persistedstate:
     specifier: ^3.2.1
     version: 3.2.1(pinia@2.0.36)
+  qs:
+    specifier: ^5.2.1
+    version: 5.2.1
   vue:
     specifier: ^3.4.19
     version: 3.4.19(typescript@5.3.3)
@@ -97,6 +100,9 @@ devDependencies:
   '@dcloudio/vite-plugin-uni':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(@vueuse/core@9.13.0)(postcss@8.4.35)(vite@4.0.3)(vue@3.4.19)
+  '@types/qs':
+    specifier: ^6.9.11
+    version: 6.9.11
   '@types/wechat-miniprogram':
     specifier: ^3.4.7
     version: 3.4.7
@@ -3529,6 +3535,10 @@ packages:
 
   /@types/prettier@2.7.3:
     resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
+    dev: true
+
+  /@types/qs@6.9.11:
+    resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
     dev: true
 
   /@types/semver@7.5.7:
@@ -9855,6 +9865,11 @@ packages:
   /qrcode-terminal@0.12.0:
     resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
     hasBin: true
+
+  /qs@5.2.1:
+    resolution: {integrity: sha512-sh/hmLUTLEiYFhSbRvkM4zj6fMWnbqQt9wrppR2LJA/U/u4xS2eWN8LBE1xc79ExYZJBVZYSMBv/INC7wpE+fw==}
+    engines: {'0': '>', '1': '=', '2': '0', '3': ., '4': '1', '5': '0', '6': ., '7': '4', '8': '0'}
+    dev: false
 
   /qs@6.11.0:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
