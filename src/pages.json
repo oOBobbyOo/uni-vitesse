@@ -37,6 +37,14 @@
         "navigationBarTitleText": "Hi"
       },
       "layout": "default"
+    },
+    {
+      "path": "pages/demo/base/mp-weixin-share",
+      "type": "page",
+      "layout": "demo",
+      "style": {
+        "navigationBarTitleText": "微信分享"
+      }
     }
   ],
   "globalStyle": {
