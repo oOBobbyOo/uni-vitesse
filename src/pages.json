@@ -22,6 +22,14 @@
       "layout": "default"
     },
     {
+      "path": "pages/demo/index",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "案例"
+      },
+      "layout": "demo"
+    },
+    {
       "path": "pages/hi/index",
       "type": "page",
       "style": {
@@ -60,6 +68,12 @@
       {
         "iconPath": "@iconPath2",
         "selectedIconPath": "@selectedIconPath2",
+        "pagePath": "pages/demo/index",
+        "text": "案例"
+      },
+      {
+        "iconPath": "@iconPath3",
+        "selectedIconPath": "@selectedIconPath3",
         "pagePath": "pages/about/index",
         "text": "关于"
       }

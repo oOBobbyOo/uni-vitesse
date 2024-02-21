@@ -7,19 +7,20 @@ export interface NavigateToOptions {
   url: "/pages/index/index" |
        "/pages/webview" |
        "/pages/about/index" |
+       "/pages/demo/index" |
        "/pages/hi/index";
 }
 interface RedirectToOptions extends NavigateToOptions {}
 
 export interface SwitchTabOptions {
-  url: "/pages/index/index" | "/pages/about/index"
+  url: '/pages/index/index' | '/pages/demo/index' | '/pages/about/index'
 }
 
-type ReLaunchOptions = NavigateToOptions | SwitchTabOptions;
+type ReLaunchOptions = NavigateToOptions | SwitchTabOptions
 
 declare interface Uni {
-  navigateTo(options: UniNamespace.NavigateToOptions & NavigateToOptions): void;
-  redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void;
-  switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
-  reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
+  navigateTo(options: UniNamespace.NavigateToOptions & NavigateToOptions): void
+  redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void
+  switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void
+  reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void
 }
