@@ -18,7 +18,7 @@ function go() {
     <view
       i-carbon-logo-github
       icon-btn
-      @click="router.push('https://github.com/oOBobbyOo/uni-vitesse')"
+      @click="router.push('https://github.com/oOBobbyOo/uni-vitese')"
     />
   </view>
 </template>
