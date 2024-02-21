@@ -1,6 +1,6 @@
+import qs from 'qs'
 import type { Router, RouterConfig, RouterLocationRaw } from '@/typings'
 
-import qs from 'qs'
 import { isString } from '@/utils'
 
 // @see https://uniapp.dcloud.net.cn/api/router.html
@@ -12,7 +12,8 @@ export function useRouter(config: RouterConfig = {}): Router {
     let arg = {}
     if (isString(to)) {
       url = to
-    } else {
+    }
+    else {
       const {
         query: _query,
         path: _path,
@@ -41,16 +42,19 @@ export function useRouter(config: RouterConfig = {}): Router {
           url: `${config.webview}?url=${url}`,
           ...arg,
         })
-      } else {
+      }
+      else {
         throw new Error('请先配置 webview 路由地址')
       }
       // #endif
       return
     }
 
-    if (tabBar) return uni.switchTab({ ...arg, url })
+    if (tabBar)
+      return uni.switchTab({ ...arg, url })
 
-    if (replace) uni.redirectTo({ ...arg, url })
+    if (replace)
+      uni.redirectTo({ ...arg, url })
     else uni.navigateTo({ ...arg, url })
   }
 

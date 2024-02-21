@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import logo from '@/static/logo.png'
 
-const jump = () => {
+function jump() {
   uni.navigateTo({ url: 'https://github.com/oOBobbyOo/uni-vitesse' })
 }
 </script>
@@ -21,10 +21,14 @@ const jump = () => {
       <view i-carbon-campsite inline-block text-5xl />
     </view>
     <view my-2>
-      <text @click="jump">Uni Vitesse</text>
+      <text @click="jump">
+        Uni Vitesse
+      </text>
     </view>
     <view>
-      <text text-sm italic op75>Opinionated UniApp Vite Starter Template</text>
+      <text text-sm italic op75>
+        Opinionated UniApp Vite Starter Template
+      </text>
     </view>
   </view>
 </template>

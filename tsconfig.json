@@ -1,18 +1,30 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
+    "target": "es2016",
+    "jsx": "preserve",
+    "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "lib": ["esnext", "dom"],
+    "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
       "@types/wechat-miniprogram",
       "@uni-helper/uni-app-types",
       "@uni-helper/uni-ui-types"
-    ]
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
   "vueCompilerOptions": {
     "nativeTags": ["block", "template", "component", "slot"]

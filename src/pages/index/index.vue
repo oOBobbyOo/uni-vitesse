@@ -22,6 +22,8 @@ function go() {
   <TheLogo />
   <TheInput v-model:value="name" placeholder="What's your name?" @keydown.enter="go" />
   <view>
-    <button :disabled="!name" m-3 text-sm btn @click="go">Go</button>
+    <button :disabled="!name" m-3 text-sm btn @click="go">
+      Go
+    </button>
   </view>
 </template>

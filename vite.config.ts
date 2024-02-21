@@ -1,25 +1,35 @@
 import { resolve } from 'node:path'
 import { defineConfig, loadEnv } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
+
 // @see https://github.com/uni-helper/vite-plugin-uni-pages
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+
 // @see https://uni-helper.js.org/vite-plugin-uni-layouts
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+
 // @see https://github.com/uni-helper/vite-plugin-uni-platform
 // 需要与 @uni-helper/vite-plugin-uni-pages 插件一起使用
 import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
+
 // @see https://github.com/uni-helper/vite-plugin-uni-manifest
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
+
 // @see https://github.com/antfu/unplugin-auto-import
 import AutoImport from 'unplugin-auto-import/vite'
+
 // @see https://unocss.dev/integrations/vite
 import UnoCSS from 'unocss/vite'
+
 // @see https://github.com/jpkleemans/vite-svg-loader
 import svgLoader from 'vite-svg-loader'
+
 // @see https://github.com/vbenjs/vite-plugin-svg-icons
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+
 // @see https://github.com/btd/rollup-plugin-visualizer
 import { visualizer } from 'rollup-plugin-visualizer'
+
 // @see https://github.com/antfu/vite-plugin-restart
 import ViteRestart from 'vite-plugin-restart'
 

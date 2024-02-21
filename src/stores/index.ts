@@ -1,5 +1,7 @@
 import { createPinia } from 'pinia'
-import { createPersistedState } from 'pinia-plugin-persistedstate' // 数据持久化
+
+// 数据持久化
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 
 const store = createPinia()
 store.use(

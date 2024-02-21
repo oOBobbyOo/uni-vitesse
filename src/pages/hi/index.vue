@@ -22,7 +22,9 @@ onLoad((option) => {
   <view>
     <view i-carbon-pedestrian inline-block animate-shake-x animate-duration-5000 text-4xl />
 
-    <view my-1> Hi, {{ name }}! </view>
+    <view my-1>
+      Hi, {{ name }}!
+    </view>
 
     <view text-sm italic op75>
       <em>Demo of dynamic route</em>
@@ -31,7 +33,9 @@ onLoad((option) => {
     <TheCounter />
 
     <view>
-      <button m-3 text-sm btn @click="router.back">Back</button>
+      <button m-3 text-sm btn @click="router.back">
+        Back
+      </button>
     </view>
   </view>
 </template>

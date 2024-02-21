@@ -39,9 +39,9 @@ export declare type RouterLocationMixtureRaw<T, K extends keyof T = keyof T> = P
   T,
   Exclude<keyof T, K>
 > &
-  {
-    [P in K]-?: Required<Pick<T, P>> & Partial<Record<Exclude<K, P>, undefined>>
-  }[K]
+{
+  [P in K]-?: Required<Pick<T, P>> & Partial<Record<Exclude<K, P>, undefined>>
+}[K]
 
 /**
  * Router 跳转参数

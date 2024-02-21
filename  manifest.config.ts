@@ -1,17 +1,17 @@
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 
 export default defineManifestConfig({
-  name: 'uni-vitese',
-  appid: '',
-  description: '',
-  versionName: '1.0.0',
-  versionCode: '100',
-  transformPx: false,
+  'name': 'uni-vitese',
+  'appid': '',
+  'description': '',
+  'versionName': '1.0.0',
+  'versionCode': '100',
+  'transformPx': false,
   /* 5+App特有相关 */
   'app-plus': {
     darkmode: true,
     themeLocation: 'theme.json',
-    //iOS平台的安全区域
+    // iOS平台的安全区域
     safearea: {
       background: '#ffffff',
       backgroundDark: '#2f0508', // HX 3.1.19+支持
@@ -63,12 +63,12 @@ export default defineManifestConfig({
       },
     },
   },
-  h5: {
+  'h5': {
     darkmode: true,
     themeLocation: 'theme.json',
   },
   /* 快应用特有相关 */
-  quickapp: {},
+  'quickapp': {},
   /* 小程序特有相关 */
   'mp-weixin': {
     darkmode: true,
@@ -88,8 +88,8 @@ export default defineManifestConfig({
   'mp-toutiao': {
     usingComponents: true,
   },
-  uniStatistics: {
+  'uniStatistics': {
     enable: false,
   },
-  vueVersion: '3',
+  'vueVersion': '3',
 })
