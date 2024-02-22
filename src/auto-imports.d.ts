@@ -289,6 +289,7 @@ declare global {
   const useWebSocket: typeof import('@vueuse/core')['useWebSocket']
   const useWebWorker: typeof import('@vueuse/core')['useWebWorker']
   const useWebWorkerFn: typeof import('@vueuse/core')['useWebWorkerFn']
+  const useWeixinLogin: typeof import('./hooks/useWeixinLogin')['useWeixinLogin']
   const useWeixinShare: typeof import('./hooks/useWeixinShare')['useWeixinShare']
   const useWindowFocus: typeof import('@vueuse/core')['useWindowFocus']
   const useWindowScroll: typeof import('@vueuse/core')['useWindowScroll']
@@ -633,6 +634,7 @@ declare module 'vue' {
     readonly useWebSocket: UnwrapRef<typeof import('@vueuse/core')['useWebSocket']>
     readonly useWebWorker: UnwrapRef<typeof import('@vueuse/core')['useWebWorker']>
     readonly useWebWorkerFn: UnwrapRef<typeof import('@vueuse/core')['useWebWorkerFn']>
+    readonly useWeixinLogin: UnwrapRef<typeof import('./hooks/useWeixinLogin')['useWeixinLogin']>
     readonly useWeixinShare: UnwrapRef<typeof import('./hooks/useWeixinShare')['useWeixinShare']>
     readonly useWindowFocus: UnwrapRef<typeof import('@vueuse/core')['useWindowFocus']>
     readonly useWindowScroll: UnwrapRef<typeof import('@vueuse/core')['useWindowScroll']>
@@ -956,6 +958,7 @@ declare module '@vue/runtime-core' {
     readonly useWebSocket: UnwrapRef<typeof import('@vueuse/core')['useWebSocket']>
     readonly useWebWorker: UnwrapRef<typeof import('@vueuse/core')['useWebWorker']>
     readonly useWebWorkerFn: UnwrapRef<typeof import('@vueuse/core')['useWebWorkerFn']>
+    readonly useWeixinLogin: UnwrapRef<typeof import('./hooks/useWeixinLogin')['useWeixinLogin']>
     readonly useWeixinShare: UnwrapRef<typeof import('./hooks/useWeixinShare')['useWeixinShare']>
     readonly useWindowFocus: UnwrapRef<typeof import('@vueuse/core')['useWindowFocus']>
     readonly useWindowScroll: UnwrapRef<typeof import('@vueuse/core')['useWindowScroll']>
