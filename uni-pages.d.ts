@@ -9,7 +9,8 @@ export interface NavigateToOptions {
        "/pages/about/index" |
        "/pages/demo/index" |
        "/pages/hi/index" |
-       "/pages/demo/base/mp-weixin-share";
+       "/pages/demo/base/mp-weixin-share" |
+       "/pages/demo/comp/ui-swiper-dot";
 }
 interface RedirectToOptions extends NavigateToOptions {}
 

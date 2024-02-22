@@ -45,6 +45,14 @@
       "style": {
         "navigationBarTitleText": "微信分享"
       }
+    },
+    {
+      "path": "pages/demo/comp/ui-swiper-dot",
+      "type": "page",
+      "layout": "comp",
+      "style": {
+        "navigationBarTitleText": "SwiperDot 轮播图指示点"
+      }
     }
   ],
   "globalStyle": {
