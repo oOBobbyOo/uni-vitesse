@@ -20,28 +20,37 @@ function gotoDetail(path: string) {
     <view my-3 font-800>
       基础功能
     </view>
-    <view class="mb-2 flex-between bg-white p-3" @click="gotoDetail('base/custom-navbar')">
-      <text class="flex-1 text-4 text-dark">
+    <view
+      class="mb-2 flex-between rd-1 bg-white p-3 dark:bg-gray-7"
+      @click="gotoDetail('base/custom-navbar')"
+    >
+      <text class="flex-1 text-4 text-dark" dark:text-white>
         自定义导航栏
       </text>
-      <text class="i-carbon-chevron-right" />
+      <text class="i-carbon-chevron-right dark:text-white" />
     </view>
 
-    <view class="mb-2 flex-between bg-white p-3" @click="gotoDetail('base/mp-weixin-share')">
-      <text class="flex-1 text-4 text-dark">
+    <view
+      class="mb-2 flex-between rd-1 bg-white p-3 dark:bg-gray-7"
+      @click="gotoDetail('base/mp-weixin-share')"
+    >
+      <text class="flex-1 text-4 text-dark dark:text-white">
         微信分享
       </text>
-      <text class="i-carbon-chevron-right" />
+      <text class="i-carbon-chevron-right dark:text-white" />
     </view>
 
     <view my-3 font-800>
       组件功能
     </view>
-    <view class="mb-2 flex-between bg-white p-3" @click="gotoDetail('comp/ui-swiper-dot')">
-      <text class="flex-1 text-4 text-dark">
+    <view
+      class="mb-2 flex-between rd-1 bg-white p-3 dark:bg-gray-7"
+      @click="gotoDetail('comp/ui-swiper-dot')"
+    >
+      <text class="flex-1 text-4 text-dark dark:text-white">
         SwiperDot
       </text>
-      <text class="i-carbon-chevron-right" />
+      <text class="i-carbon-chevron-right dark:text-white" />
     </view>
   </view>
 </template>
