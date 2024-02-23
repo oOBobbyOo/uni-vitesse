@@ -110,5 +110,19 @@
       "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
     }
   },
-  "subPackages": []
+  "subPackages": [
+    {
+      "root": "pages-sub",
+      "pages": [
+        {
+          "path": "demo/index",
+          "type": "page",
+          "layout": "demo",
+          "style": {
+            "navigationBarTitleText": "分包页面"
+          }
+        }
+      ]
+    }
+  ]
 }
