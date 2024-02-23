@@ -20,6 +20,13 @@ function gotoDetail(path: string) {
     <view my-3 font-800>
       基础功能
     </view>
+    <view class="mb-2 flex-between bg-white p-3" @click="gotoDetail('base/custom-navbar')">
+      <text class="flex-1 text-4 text-dark">
+        自定义导航栏
+      </text>
+      <text class="i-carbon-chevron-right" />
+    </view>
+
     <view class="mb-2 flex-between bg-white p-3" @click="gotoDetail('base/mp-weixin-share')">
       <text class="flex-1 text-4 text-dark">
         微信分享

@@ -39,6 +39,15 @@
       "layout": "default"
     },
     {
+      "path": "pages/demo/base/custom-navbar",
+      "type": "page",
+      "layout": "demo",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "自定义导航栏"
+      }
+    },
+    {
       "path": "pages/demo/base/mp-weixin-share",
       "type": "page",
       "layout": "demo",
