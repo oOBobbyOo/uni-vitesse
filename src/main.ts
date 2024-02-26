@@ -7,9 +7,15 @@ import './styles/main.scss'
 
 import store from './stores'
 
+import shareMixin from './utils/share'
+
 export function createApp() {
   const app = createSSRApp(App)
   app.use(store)
+
+  // 全局分享
+  app.mixin(shareMixin)
+
   return {
     app,
   }
