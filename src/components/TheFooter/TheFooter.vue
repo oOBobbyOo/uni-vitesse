@@ -24,7 +24,7 @@ function gotoSubPage(path: string) {
     <view
       i-carbon-logo-github
       icon-btn
-      @click="router.push('https://github.com/oOBobbyOo/uni-vitese')"
+      @click="router.push('https://github.com/oOBobbyOo/uni-vitesse')"
     />
   </view>
 </template>

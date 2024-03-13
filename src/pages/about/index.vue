@@ -12,7 +12,7 @@
 <template>
   <view flex="~ col" mb-10>
     <text text="2xl center" mb-2>
-      Uni Vitese
+      Uni Vitesse
     </text>
     <text text="4" indent op75>
       由 Uniapp + Vue3 + Ts + Vite4 + UnoCss + UniUI 驱动的跨端快速启动模板，使用 VS Code

@@ -1,5 +1,5 @@
 <h2 align="center">
-  Uni Vitese
+  Uni Vitesse
 </h2>
 
 <p>

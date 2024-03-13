@@ -6,7 +6,7 @@ export default defineUniPages({
   pages: [],
   globalStyle: {
     navigationStyle: 'default',
-    navigationBarTitleText: 'uni-vitese',
+    navigationBarTitleText: 'uni-vitesse',
     navigationBarBackgroundColor: '@navBgColor',
     navigationBarTextStyle: '@navTxtStyle',
     backgroundColor: '@bgColor',
