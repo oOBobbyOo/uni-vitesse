@@ -58,7 +58,7 @@
     {
       "path": "pages/demo/base/uni-show-feedback",
       "type": "page",
-      "layout": "base",
+      "layout": "demo",
       "style": {
         "navigationBarTitleText": "交互反馈"
       }
