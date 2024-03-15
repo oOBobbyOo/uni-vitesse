@@ -251,6 +251,7 @@ declare global {
   const useScrollLock: typeof import('@vueuse/core')['useScrollLock']
   const useSessionStorage: typeof import('@vueuse/core')['useSessionStorage']
   const useShare: typeof import('@vueuse/core')['useShare']
+  const useShowModal: typeof import('./hooks/useShowModal')['useShowModal']
   const useShowToast: typeof import('./hooks/useShowToast')['useShowToast']
   const useSlots: typeof import('vue')['useSlots']
   const useSorted: typeof import('@vueuse/core')['useSorted']
@@ -595,6 +596,7 @@ declare module 'vue' {
     readonly useScrollLock: UnwrapRef<typeof import('@vueuse/core')['useScrollLock']>
     readonly useSessionStorage: UnwrapRef<typeof import('@vueuse/core')['useSessionStorage']>
     readonly useShare: UnwrapRef<typeof import('@vueuse/core')['useShare']>
+    readonly useShowModal: UnwrapRef<typeof import('./hooks/useShowModal')['useShowModal']>
     readonly useShowToast: UnwrapRef<typeof import('./hooks/useShowToast')['useShowToast']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSorted: UnwrapRef<typeof import('@vueuse/core')['useSorted']>
@@ -920,6 +922,7 @@ declare module '@vue/runtime-core' {
     readonly useScrollLock: UnwrapRef<typeof import('@vueuse/core')['useScrollLock']>
     readonly useSessionStorage: UnwrapRef<typeof import('@vueuse/core')['useSessionStorage']>
     readonly useShare: UnwrapRef<typeof import('@vueuse/core')['useShare']>
+    readonly useShowModal: UnwrapRef<typeof import('./hooks/useShowModal')['useShowModal']>
     readonly useShowToast: UnwrapRef<typeof import('./hooks/useShowToast')['useShowToast']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSorted: UnwrapRef<typeof import('@vueuse/core')['useSorted']>
