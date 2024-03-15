@@ -11,20 +11,21 @@ export interface NavigateToOptions {
        "/pages/hi/index" |
        "/pages/demo/base/custom-navbar" |
        "/pages/demo/base/mp-weixin-share" |
-       "/pages/demo/comp/ui-swiper-dot" |
+       "/pages/demo/base/uni-show-feedback" |
+       "/pages/demo/comp/uni-swiper-dot" |
        "/pages-sub/demo/index";
 }
 interface RedirectToOptions extends NavigateToOptions {}
 
 export interface SwitchTabOptions {
-  url: "/pages/index/index" | "/pages/demo/index" | "/pages/about/index"
+  url: '/pages/index/index' | '/pages/demo/index' | '/pages/about/index'
 }
 
-type ReLaunchOptions = NavigateToOptions | SwitchTabOptions;
+type ReLaunchOptions = NavigateToOptions | SwitchTabOptions
 
 declare interface Uni {
-  navigateTo(options: UniNamespace.NavigateToOptions & NavigateToOptions): void;
-  redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void;
-  switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
-  reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
+  navigateTo(options: UniNamespace.NavigateToOptions & NavigateToOptions): void
+  redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void
+  switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void
+  reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void
 }

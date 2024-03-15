@@ -46,12 +46,22 @@ function gotoSubPage(path: string) {
       <text class="i-carbon-chevron-right dark:text-white" />
     </view>
 
+    <view
+      class="mb-2 flex-between rd-1 bg-white p-3 dark:bg-gray-7"
+      @click="gotoDetail('base/uni-show-feedback')"
+    >
+      <text class="flex-1 text-4 text-dark dark:text-white">
+        交互反馈
+      </text>
+      <text class="i-carbon-chevron-right dark:text-white" />
+    </view>
+
     <view my-3 font-800>
       组件功能
     </view>
     <view
       class="mb-2 flex-between rd-1 bg-white p-3 dark:bg-gray-7"
-      @click="gotoDetail('comp/ui-swiper-dot')"
+      @click="gotoDetail('comp/uni-swiper-dot')"
     >
       <text class="flex-1 text-4 text-dark dark:text-white">
         SwiperDot

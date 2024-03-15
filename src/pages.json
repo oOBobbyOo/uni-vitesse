@@ -56,7 +56,15 @@
       }
     },
     {
-      "path": "pages/demo/comp/ui-swiper-dot",
+      "path": "pages/demo/base/uni-show-feedback",
+      "type": "page",
+      "layout": "base",
+      "style": {
+        "navigationBarTitleText": "交互反馈"
+      }
+    },
+    {
+      "path": "pages/demo/comp/uni-swiper-dot",
       "type": "page",
       "layout": "comp",
       "style": {
